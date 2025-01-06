@@ -8,5 +8,5 @@
 # This script assumes CodeQL has been installed and the owasp-benchmark database has already been initialized per the instructions in runCodeQL.sh
 
 benchmark_version=$(scripts/getBenchmarkVersion.sh)
-../../tools/codeql-home/codeql/codeql database analyze owasp-benchmark java-security-and-quality.qls --format=sarifv2.1.0 --output=results/Benchmark_$benchmark_version-codeql_java-security-and-quality.sarif
+../codeql/codeql database analyze owasp-benchmark java-security-and-quality.qls --format=sarifv2.1.0 --output=results/Benchmark_$benchmark_version-codeql_java-security-and-quality.sarif
 
